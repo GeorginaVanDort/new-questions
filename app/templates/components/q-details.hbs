@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>{{q.text}}</h1>
+  <div class="container">
+    <h4><em>{{q.author}}</em></h4>
+    <h4>{{q.notes}}</h4>
+    <span class="glyphicon glyphicon-pencil" {{action 'showUpdate'}}></span>
+  </div>
+
+  {{#if showUpdate}}
+  <div class="container">
+    {{edit-q q=q update="update"}}
+    <div class="container">
+    <button class="btn" {{action 'hideUpdate'}}>Cancel</button>
+    </div>
+  </div>
+  {{/if}}
+
+</div>

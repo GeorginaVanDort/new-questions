@@ -1,0 +1,15 @@
+<div class="container">
+  {{q-details q=model update="update"}}
+
+  <div class="embed">
+    <h2>Answers</h2><hr>
+  </div>
+
+  <div class="container">
+    {{new-answer q=model saveAnswer="saveAnswer"}}
+  </div>
+
+  {{#each model as |q|}}
+    {{q-tile q=q}}
+  {{/each}}
+</div>

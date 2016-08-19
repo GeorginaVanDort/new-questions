@@ -1,0 +1,32 @@
+body {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5em;
+
+}
+
+.tile {
+  max-width: 60%;
+  margin: 40px auto 0;
+}
+
+.btn {
+  font-size: 1em;
+  font-weight: bolder;
+  background-color: white;
+  border-color: grey;
+  border-width: thin;
+  padding: 5px;
+}
+
+.btn:hover {
+  border-color: #ff463b;
+  border-width: 1.8px;
+}
+
+input {
+box-sizing: content-box;
+}
+
+.embed {
+  padding: 30px;
+}
