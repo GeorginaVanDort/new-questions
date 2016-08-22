@@ -16,7 +16,7 @@ export default Ember.Route.extend({
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var q = params.q;
-      q.get('q').addObject(newAnswer);
+      q.get('answers').addObject(newAnswer);
       newAnswer.save().then(function(){
         return q.save();
       });
