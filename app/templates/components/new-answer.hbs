@@ -1,6 +1,5 @@
 {{#if newAnswer}}
   <div class="container">
-    <div class="embed">
     <h1>Answer this Q</h1>
     <hr>
       <form>
@@ -14,12 +13,9 @@
         </div>
         <button class="btn"{{action 'saveAnswer'}}>Save</button>
       </form>
-    </div>
   </div>
 {{else}}
-<div class="embed">
     <button class="btn" {{action 'answerFormShow'}}>Answer this Q!</button>
     <br>
     <br>
-  </div>
 {{/if}}
