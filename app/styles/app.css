@@ -36,10 +36,23 @@ box-sizing: content-box;
 
 .glyphicon-certificate {
 color: orange;
+font-size: 14px;
 }
 .glyphicon-ice-lolly-tasted {
 color: purple;
+font-size: 14px;
 }
 .glyphicon-search {
 color: green;
+font-size: 14px;
+}
+
+.glyphicon-plus-sign:hover {
+  color: red;
+
+}
+
+.little {
+  max-height: 100px;
+  max-width: 120px;
 }

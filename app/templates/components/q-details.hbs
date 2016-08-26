@@ -9,7 +9,7 @@
       <div class="container">
         <h4><em>Posted By:&nbsp;&nbsp;{{q.author}}</em></h4>
 
-        <h4>"{{q.notes}}"&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign" {{action 'addToClipboard' q}}></span></h4>
+        <h4>"{{q.notes}}"&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign" {{action 'addToClipboard' q}} title="Add to Clipboard"></span></h4>
 
         <span class="glyphicon glyphicon-pencil" {{action 'showUpdate'}}></span>&nbsp;<span {{action 'showUpdate'}}>Edit Your Post</span>&nbsp;<span class="glyphicon glyphicon-pencil" {{action 'showUpdate'}}></span>
       </div>
