@@ -1,20 +1,38 @@
 <div>
-  <h1>Add a New Q</h1>
+  <h1>New Post</h1>
   <hr>
     <form>
       <div class="form-group">
-        <label for="title">Your Q</label>
+        <label for="title">Title:</label>
         {{input value=text id="text"}}
       </div>
+
       <div class="form-group">
-        <label for="date">Your Name</label>
+        <label for="date">Your Name:</label>
         {{input value=author id="author"}}
       </div>
+
       <div class="form-group">
-        <label for="neighborhood">Add Extra Details Here</label>
+        <label for="imgURL" >Image Link:</label>
+        {{input placeholder="Image URL" value=imgURL id="imgURL"}}
+      </div>
+
+      <div class="form-group">
+        <label for="question">Choose a Category:</label><br>
+        <label for="question">Question</label>
+        {{radio-button value='Question' checked=category}}
+        <label for="question">Humor</label>
+        {{radio-button value='Humor' checked=category}}
+        <label for="question">Serious</label>
+        {{radio-button value='Serious' checked=category}}
+      </div>
+
+      <div class="form-group">
+        <label for="details">Add Your Thoughts Here</label>
         <br>
         {{textarea rows="6" cols="40" value=notes id="notes"}}
       </div>
+
       <button class="btn"{{action 'save'}}>Save</button>
     </form>
 </div>

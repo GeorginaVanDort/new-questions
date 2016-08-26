@@ -2,17 +2,21 @@
   <div class="container">
     <h1>Answer this Q</h1>
     <hr>
+    
       <form>
         <div class="form-group">
           <label for="text">Your Answer</label><br>
           {{textarea rows="6" cols="40" value=text id="text"}}
         </div>
+
         <div class="form-group">
           <label for="date">Your Name</label>
           {{input value=name id="name"}}
         </div>
+
         <button class="btn"{{action 'saveAnswer'}}>Save</button>
       </form>
+
   </div>
 {{else}}
     <button class="btn" {{action 'answerFormShow'}}>Answer this Q!</button>

@@ -6,7 +6,10 @@ export default Ember.Component.extend({
       var params = {
         text: this.get('text'),
         author: this.get('author'),
-        notes: this.get('notes')
+        imgURL: this.get('imgURL'),
+        category: this.get('category'),
+        notes: this.get('notes'),
+        votes: 0
       };
       this.sendAction('save', params);
     }
