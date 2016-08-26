@@ -1,22 +1,31 @@
-<div class="container">
-  <h1>{{q.text}}</h1>
-<div class="container">
-  <img class="img-display" src={{q.imgURL}} alt="" />
-</div>
-
-  <div class="container">
-    <h4><em>Posted By:&nbsp;&nbsp;{{q.author}}</em></h4>
-    <h4>"{{q.notes}}"</h4>
-    <span class="glyphicon glyphicon-pencil" {{action 'showUpdate'}}></span>&nbsp;<span {{action 'showUpdate'}}>Edit Your Post</span>&nbsp;<span class="glyphicon glyphicon-pencil" {{action 'showUpdate'}}></span>
-  </div>
-
-  {{#if showUpdate}}
-  <div class="container">
-    {{edit-q q=q update="update"}}
+<div class="content row">
+  <div class="col-xs-8">
     <div class="container">
-    <button class="btn" {{action 'hideUpdate'}}>Cancel</button>
+      <h1>{{q.text}}</h1>
+    <div class="container">
+      <img class="img-display" src={{q.imgURL}} alt="" />
+    </div>
+
+      <div class="container">
+        <h4><em>Posted By:&nbsp;&nbsp;{{q.author}}</em></h4>
+
+        <h4>"{{q.notes}}"&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign" {{action 'addToClipboard' q}}></span></h4>
+
+        <span class="glyphicon glyphicon-pencil" {{action 'showUpdate'}}></span>&nbsp;<span {{action 'showUpdate'}}>Edit Your Post</span>&nbsp;<span class="glyphicon glyphicon-pencil" {{action 'showUpdate'}}></span>
+      </div>
+
+      {{#if showUpdate}}
+      <div class="container">
+        {{edit-q q=q update="update"}}
+        <div class="container">
+        <button class="btn" {{action 'hideUpdate'}}>Cancel</button>
+        </div>
+      </div>
+      {{/if}}
     </div>
   </div>
-  {{/if}}
-
+  <div class="cart col-xs-4">
+    <h2>Your saved Qs</h2>
+    {{clipboard-page}}
+  </div>
 </div>
