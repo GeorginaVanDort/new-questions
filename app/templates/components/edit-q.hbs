@@ -3,13 +3,37 @@
   <hr>
     <form>
       <div class="form-group">
-        {{textarea rows="2" cols="40" value=q.text id="text"}}
+        <label for="title">Title:</label>
+        {{input value=q.text id="text"}}
       </div>
+
       <div class="form-group">
-        {{textarea rows="1" cols="40" value=q.author id="author"}}
+        <label for="date">Your Name:</label>
+        {{input value=q.author id="author"}}
       </div>
+
       <div class="form-group">
-        <label for="notes">Add Extra Details Here</label>
+        <label for="imgURL" >Image Link:</label>
+        {{input placeholder="Image URL" value=q.imgURL id="imgURL"}}
+      </div>
+
+      <div class="form-group">
+        <label for="question">Choose a Category:</label><br>
+
+        {{radio-button value='Question' checked=q.category}}
+        <label for="question">Question</label>
+        <span>&nbsp;&nbsp;</span>
+
+        {{radio-button value='Humor' checked=q.category}}
+        <label for="question">Humor</label>
+        <span>&nbsp;&nbsp;</span>
+
+        {{radio-button value='Serious' checked=q.category}}
+        <label for="question">Serious</label>
+      </div>
+
+      <div class="form-group">
+        <label for="details">Add Your Thoughts Here</label>
         <br>
         {{textarea rows="6" cols="40" value=q.notes id="notes"}}
       </div>

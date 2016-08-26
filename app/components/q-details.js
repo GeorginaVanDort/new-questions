@@ -11,9 +11,8 @@ export default Ember.Component.extend({
       this.set("showUpdate", false);
     },
 
-    update(q, params) {
+    update() {
       this.set("showUpdate", false);
-      this.sendAction('update', q, params);
     }
   }
 });
