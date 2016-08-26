@@ -3,6 +3,10 @@ body {
   font-size: 1.5em;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .img-display {
   max-height: 400px;
 }
@@ -38,10 +42,12 @@ box-sizing: content-box;
 color: orange;
 font-size: 14px;
 }
+
 .glyphicon-ice-lolly-tasted {
 color: purple;
 font-size: 14px;
 }
+
 .glyphicon-search {
 color: green;
 font-size: 14px;
@@ -49,10 +55,18 @@ font-size: 14px;
 
 .glyphicon-plus-sign:hover {
   color: red;
+}
 
+.glyphicon-remove-circle:hover {
+  color: red;
 }
 
 .little {
   max-height: 100px;
   max-width: 120px;
+}
+
+a {
+  font-weight: bolder;
+  color: black;
 }

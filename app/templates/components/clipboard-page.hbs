@@ -1,6 +1,6 @@
 {{#each clipBoard.items as |item|}}
 <div class="col-xs-6">
   <img src="{{item.imgURL}}" alt="{{item.text}}" class="little"/>
-  <h5>{{item.text}}</h5>
+  <h5>{{item.text}}&nbsp;<span class="glyphicon glyphicon-remove-circle" {{action 'removeItem' q}}></span></h5>
 </div>
 {{/each}}
