@@ -1,11 +1,11 @@
 {{#if newAnswer}}
   <div class="container">
-    <h1>Answer this Q</h1>
+    <h1>Add your Comment</h1>
     <hr>
-    
+
       <form>
         <div class="form-group">
-          <label for="text">Your Answer</label><br>
+          <label for="text">Put Your Thoughts Down Here</label><br>
           {{textarea rows="6" cols="40" value=text id="text"}}
         </div>
 
@@ -19,7 +19,7 @@
 
   </div>
 {{else}}
-    <button class="btn" {{action 'answerFormShow'}}>Answer this Q!</button>
+    <button class="btn" {{action 'answerFormShow'}}>Add a Comment</button>
     <br>
     <br>
 {{/if}}
