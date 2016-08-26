@@ -33,3 +33,13 @@ box-sizing: content-box;
 .embed {
   padding: 30px;
 }
+
+.glyphicon-certificate {
+color: orange;
+}
+.glyphicon-ice-lolly-tasted {
+color: purple;
+}
+.glyphicon-search {
+color: green;
+}
